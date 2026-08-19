@@ -17,7 +17,7 @@ const traceSteps = [
 
 export default function HeritageProductPage() {
   return (
-    <main className="bg-[#f4efe5] text-[#261b15] -mt-16 pt-16">
+    <main className="bg-[#f4efe5] text-[#261b15]">
       <section className="relative overflow-hidden bg-[#1f1512] text-[#f8ead0]">
         <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#c9974d_0,transparent_30%),radial-gradient(circle_at_80%_60%,#7e151b_0,transparent_32%)]" />
         <div className="container-page relative py-4 md:py-6 flex items-center justify-between gap-3 border-b border-[#d7b56d]/25">
@@ -37,7 +37,7 @@ export default function HeritageProductPage() {
           </div>
           <div className="relative -order-1 lg:order-none">
             <div className="absolute -inset-6 rounded-full bg-[#c9974d]/15 blur-3xl" />
-            <Image src="/heritage/stt-01-product.png" alt="Sản phẩm Dấu ấn Hoàng triều" width={1300} height={1217} priority sizes="(max-width: 768px) 100vw, 58vw" className="relative w-full max-h-[46vh] lg:max-h-none object-cover rounded-2xl md:rounded-[2rem] shadow-2xl shadow-black/40" />
+            <Image src="/trace/heritage/stt-01-product.png" alt="Sản phẩm Dấu ấn Hoàng triều" width={1300} height={1217} priority sizes="(max-width: 768px) 100vw, 58vw" className="relative w-full max-h-[46vh] lg:max-h-none object-cover rounded-2xl md:rounded-[2rem] shadow-2xl shadow-black/40" />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function HeritageProductPage() {
           <div className="flex flex-wrap justify-between items-end gap-4 mb-8"><div><span className="text-[#7d1e23] text-sm font-bold tracking-[.18em]">TƯ LIỆU THAM CHIẾU</span><h2 className="font-serif text-4xl mt-2">Từ phác thảo đến vật phẩm</h2></div><span className="text-sm text-[#65594e]">Bảng concept STT-01 · do người dùng cung cấp</span></div>
           <p className="md:hidden text-xs text-[#65594e] mb-3">Vuốt ngang để xem rõ toàn bộ bảng ý tưởng.</p>
           <div className="overflow-x-auto rounded-2xl snap-x">
-            <Image src="/heritage/stt-01-concept-board.png" alt="Bảng ý tưởng sản phẩm STT-01" width={960} height={540} className="w-[820px] max-w-none md:w-full md:max-w-full rounded-2xl md:rounded-[1.5rem] shadow-xl border border-white/60 snap-start" />
+            <Image src="/trace/heritage/stt-01-concept-board.png" alt="Bảng ý tưởng sản phẩm STT-01" width={960} height={540} className="w-[820px] max-w-none md:w-full md:max-w-full rounded-2xl md:rounded-[1.5rem] shadow-xl border border-white/60 snap-start" />
           </div>
         </div>
       </section>
