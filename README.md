@@ -17,6 +17,17 @@ pnpm dev
 
 Mở `http://localhost:3000`. Admin prototype: `http://localhost:3000/admin`.
 
+## Deploy public với Railway + SQLite volume
+
+1. Tạo Railway project từ GitHub repository.
+2. Gắn persistent volume tại `/data`.
+3. Đặt `DATABASE_URL=file:/data/dev.db`.
+4. Đặt `NEXT_PUBLIC_APP_URL` bằng public domain Railway.
+5. Build command: `pnpm build`.
+6. Start command: `pnpm start:deploy`.
+
+Start command tự chạy migration và chỉ seed dữ liệu demo khi database còn trống.
+
 ## Demo tokens
 
 | Token | Kết quả |
