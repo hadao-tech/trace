@@ -28,6 +28,8 @@ Mở `http://localhost:3000`. Admin prototype: `http://localhost:3000/admin`.
 
 Start command tự chạy migration và chỉ seed dữ liệu demo khi database còn trống.
 
+GitHub Actions chạy typecheck, lint và production build trên mọi push/pull request vào `main`. Railway đọc `railway.toml`, tự deploy từ GitHub và kiểm tra `/api/health` trước khi đưa phiên bản mới lên public.
+
 ## Demo tokens
 
 | Token | Kết quả |
