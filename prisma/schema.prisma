@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum UnitStatus {
+  ACTIVE
+  DISABLED
+  RECALLED
+}
+
+enum VerificationVerdict {
+  VALID
+  SUSPICIOUS
+  NOT_FOUND
+  DISABLED
+  EXCESSIVE_SCANS
+}
+
+enum ReportStatus {
+  OPEN
+  REVIEWED
+  RESOLVED
+}
+
+model Brand {
+  id String @id @default(cuid())
+  name String
+  website String?
+  products Product[]
+  createdAt DateTime @default(now())
+}
+
+model Product {
+  id String @id @default(cuid())
+  sku String @unique
+  name String
+  description String
+  category String
+  origin String
+  manufacturer String
+  imageUrl String?
+  brandId String
+  brand Brand @relation(fields: [brandId], references: [id])
+  units ProductUnit[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProductUnit {
+  id String @id @default(cuid())
+  token String @unique
+  serialNumber String @unique
+  batchNumber String
+  manufacturedAt DateTime
+  expiresAt DateTime?
+  status UnitStatus @default(ACTIVE)
+  riskFlag Boolean @default(false)
+  scanThreshold Int @default(10)
+  productId String
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  traceEvents TraceEvent[]
+  verifications VerificationLog[]
+  reports SuspiciousReport[]
+  createdAt DateTime @default(now())
+}
+
+model TraceEvent {
+  id String @id @default(cuid())
+  type String
+  title String
+  description String
+  location String
+  occurredAt DateTime
+  unitId String
+  unit ProductUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+}
+
+model VerificationLog {
+  id String @id @default(cuid())
+  tokenAttempt String
+  verdict VerificationVerdict
+  ipAddress String?
+  userAgent String?
+  unitId String?
+  unit ProductUnit? @relation(fields: [unitId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+}
+
+model SuspiciousReport {
+  id String @id @default(cuid())
+  reason String
+  details String?
+  contact String?
+  status ReportStatus @default(OPEN)
+  unitId String
+  unit ProductUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}

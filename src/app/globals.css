@@ -1,0 +1,9 @@
+@import "tailwindcss";
+:root { --ink:#10231d; --green:#0c6b4d; --mint:#e7f5ef; --cream:#f8f6ef; }
+* { box-sizing:border-box } body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial,Helvetica,sans-serif }
+.container-page { width:min(1120px,calc(100% - 32px)); margin-inline:auto }
+.card { background:white; border:1px solid #dde7e2; border-radius:20px; box-shadow:0 10px 35px rgba(16,35,29,.06) }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; min-height:44px; border-radius:12px; padding:.65rem 1rem; font-weight:700; transition:.2s; cursor:pointer }
+.btn-primary { background:var(--green); color:white }.btn-primary:hover{background:#084e39}.btn-secondary{background:white;border:1px solid #cbdad3}.btn-secondary:hover{background:#f2f8f5}
+.input { width:100%; border:1px solid #c7d5cf; background:white; border-radius:12px; min-height:46px; padding:.7rem .85rem; outline:none }.input:focus{border-color:var(--green);box-shadow:0 0 0 3px #0c6b4d22}
+.label { display:block; font-size:.86rem; font-weight:700; margin-bottom:.35rem }

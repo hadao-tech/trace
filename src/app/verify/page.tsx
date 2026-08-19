@@ -1,0 +1,2 @@
+import { VerifyClient } from "@/components/VerifyClient";
+export default function VerifyPage(){return <main className="container-page py-14"><div className="text-center mb-8"><h1 className="text-3xl md:text-4xl font-black">Kiểm tra sản phẩm</h1><p className="text-slate-600 mt-3">Nhập mã trên tem hoặc chạm thẻ NFC.</p></div><VerifyClient/><div className="max-w-xl mx-auto mt-6 text-sm text-slate-500"><p className="font-bold text-slate-700">Mã demo</p><p className="font-mono mt-1">8F7K29ABC · RISK88XYZ · OFF000TAG · HOTSCAN999 · NOTFOUND1</p></div></main>}
