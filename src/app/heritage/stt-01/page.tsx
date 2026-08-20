@@ -97,6 +97,20 @@ export default function HeritageProductPage() {
           <div className="assurance-state"><Fingerprint/><span><small>Vai trò</small><b>Vận hành nền tảng</b></span></div>
         </article>
       </div>
+      <div className="museum-document-card">
+        <div className="museum-document-copy">
+          <div className="certificate-emblem"><Landmark size={32}/></div>
+          <p className="eyebrow gold">Chứng thư xác thực</p>
+          <h2>Chứng nhận<br/>giá trị văn hóa</h2>
+          <p>Chứng thư ghi nhận sản phẩm khai thác và chuyển hóa giá trị văn hóa từ di sản Việt Nam, được Bảo tàng Lịch sử Quốc gia bảo chứng về nội dung văn hóa.</p>
+          <dl><div><dt>Đơn vị bảo chứng</dt><dd>Bảo tàng Lịch sử Quốc gia</dd></div><div><dt>Sản phẩm</dt><dd>Dấu ấn Hoàng triều – STT-01</dd></div><div><dt>Giá trị tham chiếu</dt><dd>Mỹ thuật cung đình triều Nguyễn</dd></div></dl>
+          <small>* Bản gốc được lưu cùng hồ sơ và bàn giao kèm vật phẩm.</small>
+        </div>
+        <div className="museum-document-preview">
+          <span>Certificate of Cultural Value</span>
+          <Image src="https://i.ibb.co/1YPMtgpT/th-ch-ng-nh-n.png" alt="Chứng thư xác thực giá trị văn hóa của Bảo tàng Lịch sử Quốc gia" width={1200} height={850}/>
+        </div>
+      </div>
       <div className="document-card">
         <div className="document-preview"><Image src={`${BASE}/heritage/copyright-certificate.png`} alt="Mẫu Giấy chứng nhận đăng ký quyền tác giả" width={768} height={1024}/></div>
         <div className="document-copy"><div className="certificate-emblem"><Award size={32}/></div><p className="eyebrow dark">Tài liệu pháp lý</p><h2>Giấy chứng nhận đăng ký quyền tác giả</h2><p>Văn bằng do Cục Bản quyền tác giả – Bộ Văn hóa, Thể thao và Du lịch cấp, ghi nhận hồ sơ đăng ký quyền tác giả cho thiết kế sản phẩm.</p><dl><div><dt>Tên tác phẩm</dt><dd>Dấu ấn Hoàng triều – STT-01</dd></div><div><dt>Loại hình</dt><dd>Tác phẩm mỹ thuật ứng dụng</dd></div><div><dt>Cơ quan cấp</dt><dd>Cục Bản quyền tác giả</dd></div><div><dt>Số · ngày cấp</dt><dd>Chưa có dữ liệu trên bản ảnh được cung cấp</dd></div><div><dt>Tác giả · chủ sở hữu</dt><dd>Chưa có dữ liệu trên bản ảnh được cung cấp</dd></div><div><dt>Trạng thái hồ sơ</dt><dd>Đã có chứng nhận</dd></div></dl></div>
