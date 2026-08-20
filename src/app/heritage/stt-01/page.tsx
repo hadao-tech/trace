@@ -81,14 +81,14 @@ export default function HeritageProductPage() {
         <article className="assurance-card museum-card">
           <div className="assurance-logo museum-logo"><Image src={`${BASE}/heritage/museum-logo.png`} alt="Biểu trưng Bảo tàng Lịch sử Quốc gia" width={338} height={338}/></div>
           <div className="assurance-index">01</div><p className="assurance-label">Bảo chứng giá trị văn hóa</p><h3>Bảo tàng Lịch sử Quốc gia</h3>
-          <p className="assurance-copy">Giá trị văn hóa và nội dung di sản của sản phẩm được Bảo tàng Lịch sử Quốc gia bảo chứng.</p>
+          <p className="assurance-copy">Bảo chứng nội dung khai thác giá trị văn hóa từ hình tượng mũ thượng triều thời Nguyễn, hệ họa tiết rồng, mây, mặt trời và nghệ thuật trang sức cung đình Việt Nam.</p>
           <div className="assurance-state"><ShieldCheck/><span><small>Trạng thái</small><b>Đã bảo chứng</b></span></div>
         </article>
         <article className="assurance-card copyright-card">
           <div className="assurance-logo copyright-logo"><Image src={`${BASE}/heritage/copyright-office-logo.png`} alt="Biểu trưng Cục Bản quyền tác giả" width={4000} height={4000}/></div>
           <div className="assurance-index">02</div><p className="assurance-label">Chứng nhận quyền tác giả</p><h3>Cục Bản quyền tác giả</h3>
-          <p className="assurance-copy">Thiết kế sản phẩm có Giấy chứng nhận đăng ký quyền tác giả do Cục Bản quyền tác giả cấp.</p>
-          <div className="assurance-state"><ScrollText/><span><small>Số giấy chứng nhận</small><b>Cập nhật theo hồ sơ gốc</b></span></div>
+          <p className="assurance-copy">Thiết kế mỹ thuật ứng dụng “Dấu ấn Hoàng triều – STT-01” có Giấy chứng nhận đăng ký quyền tác giả do Cục Bản quyền tác giả cấp.</p>
+          <div className="assurance-state"><ScrollText/><span><small>Loại hình tác phẩm</small><b>Mỹ thuật ứng dụng</b></span></div>
         </article>
         <article className="assurance-card operator-card">
           <div className="assurance-logo vtc-logo"><Image src={`${BASE}/heritage/vtc-logo.png`} alt="Biểu trưng VTC" width={4000} height={2160}/></div>
@@ -99,7 +99,7 @@ export default function HeritageProductPage() {
       </div>
       <div className="document-card">
         <div className="document-preview"><Image src={`${BASE}/heritage/copyright-certificate.png`} alt="Mẫu Giấy chứng nhận đăng ký quyền tác giả" width={768} height={1024}/></div>
-        <div className="document-copy"><div className="certificate-emblem"><Award size={32}/></div><p className="eyebrow dark">Tài liệu pháp lý</p><h2>Giấy chứng nhận đăng ký quyền tác giả</h2><p>Văn bằng do Cục Bản quyền tác giả – Bộ Văn hóa, Thể thao và Du lịch cấp, xác lập hồ sơ đăng ký quyền tác giả cho thiết kế.</p><dl><div><dt>Cơ quan cấp</dt><dd>Cục Bản quyền tác giả</dd></div><div><dt>Số văn bằng</dt><dd>Cập nhật theo bản chứng nhận chính thức</dd></div><div><dt>Trạng thái</dt><dd>Đã có chứng nhận</dd></div></dl></div>
+        <div className="document-copy"><div className="certificate-emblem"><Award size={32}/></div><p className="eyebrow dark">Tài liệu pháp lý</p><h2>Giấy chứng nhận đăng ký quyền tác giả</h2><p>Văn bằng do Cục Bản quyền tác giả – Bộ Văn hóa, Thể thao và Du lịch cấp, ghi nhận hồ sơ đăng ký quyền tác giả cho thiết kế sản phẩm.</p><dl><div><dt>Tên tác phẩm</dt><dd>Dấu ấn Hoàng triều – STT-01</dd></div><div><dt>Loại hình</dt><dd>Tác phẩm mỹ thuật ứng dụng</dd></div><div><dt>Cơ quan cấp</dt><dd>Cục Bản quyền tác giả</dd></div><div><dt>Số · ngày cấp</dt><dd>Chưa có dữ liệu trên bản ảnh được cung cấp</dd></div><div><dt>Tác giả · chủ sở hữu</dt><dd>Chưa có dữ liệu trên bản ảnh được cung cấp</dd></div><div><dt>Trạng thái hồ sơ</dt><dd>Đã có chứng nhận</dd></div></dl></div>
       </div>
       <p className="legal-note"><ShieldCheck/> Số văn bằng, ngày cấp và chủ sở hữu cần được đối chiếu và cập nhật đúng theo bản chứng nhận chính thức trước khi công bố rộng rãi.</p>
     </div></section>
