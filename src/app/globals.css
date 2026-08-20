@@ -22,42 +22,5 @@ body{font-family:"Inter","Segoe UI",Arial,sans-serif;font-weight:400}.hero h1,.s
 
 /* Chứng thư văn hóa dựng riêng cho STT-01 */
 .cultural-certificate{width:100%;aspect-ratio:1.48/1;background:#f5efe3;padding:9px;color:#4c2b1c;box-shadow:0 14px 38px #0004;font-family:"Inter","Segoe UI",Arial,sans-serif}.certificate-border{height:100%;border:2px solid #a76c27;outline:1px solid #c59759;outline-offset:-7px;padding:22px;display:flex;flex-direction:column;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 48%,#b98a4d0a 0 29%,transparent 30%),linear-gradient(90deg,#fffdf8e8,#fffdf8e8)}.certificate-border:after{content:"";position:absolute;width:46%;aspect-ratio:1;left:28%;top:22%;border:1px solid #9c6d3420;border-radius:50%;box-shadow:0 0 0 22px #9c6d3408;pointer-events:none}.certificate-head,.certificate-main,.certificate-foot{position:relative;z-index:1}.certificate-head{display:flex;justify-content:space-between;align-items:center;gap:18px}.certificate-museum{display:flex;align-items:center;gap:10px}.museum-document-preview .certificate-museum img{width:48px;height:48px;object-fit:contain;box-shadow:none}.certificate-museum b{display:block;font:700 15px "Playfair Display","Times New Roman",serif;color:#6f2518}.certificate-museum small{display:block;font-size:6px;letter-spacing:.18em;color:#9c6142;margin-top:3px}.certificate-serial{text-align:right}.certificate-serial small{display:block;font-size:5px;color:#9b775c}.certificate-serial b{display:block;font-size:10px;color:#8c2f1f;margin-top:4px}.certificate-rule{height:1px;background:#caa372;position:relative;z-index:1;margin:10px 0}.certificate-main{display:grid;grid-template-columns:1fr 170px;gap:18px;flex:1;min-height:0}.certificate-info{min-width:0}.certificate-product small,.certificate-significance small,.certificate-specs small{display:block;color:#8c4f2c;font-size:6px;font-weight:700;letter-spacing:.03em}.certificate-product h3{margin:5px 0 2px;font:700 17px "Playfair Display","Times New Roman",serif;color:#3e271c}.certificate-product p{font-size:8px;margin:0 0 9px;color:#795744}.certificate-significance{border-top:1px solid #dac6ac;padding-top:8px}.certificate-significance p{font:italic 7px/1.45 "Playfair Display","Times New Roman",serif;margin:5px 0 8px;color:#604636}.certificate-specs{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #dac6ac}.certificate-specs>div{padding:7px 8px 5px 0;border-bottom:1px solid #e5d6c2}.certificate-specs>div:nth-child(odd){border-right:1px solid #dac6ac}.certificate-specs>div:nth-child(even){padding-left:9px}.certificate-specs b{display:block;font:600 8px/1.4 "Playfair Display","Times New Roman",serif;margin-top:4px}.certificate-side{display:flex;flex-direction:column;align-items:center;gap:9px}.certificate-product-image{height:118px;width:100%;background:#f0ebe2;border-radius:3px;overflow:hidden}.museum-document-preview .certificate-product-image img{width:100%;height:100%;max-height:none;object-fit:cover;box-shadow:none}.certificate-qr{text-align:center;color:#713021}.certificate-qr svg{width:37px;height:37px}.certificate-qr small{display:block;font-size:5px;line-height:1.3;color:#9d7a62}.certificate-foot{display:flex;justify-content:space-between;align-items:end;min-height:55px}.certificate-foot>div:first-child p{font-size:6px;color:#a17e68;margin:3px 0}.certificate-approval{display:flex;align-items:center;gap:7px;text-align:center}.museum-document-preview .certificate-approval img{width:58px;height:58px;max-height:none;object-fit:contain;box-shadow:none;mix-blend-mode:multiply}.certificate-approval span{display:block}.certificate-approval small{display:block;font-size:5px;color:#9d4a3a}.certificate-approval b{display:block;font-size:6px;margin-top:10px;color:#6f3327}
-@media(max-width:600px){.museum-document-preview{overflow-x:auto;justify-content:start}.cultural-certificate{width:660px;max-width:none;flex:none}.museum-document-preview>span{display:none}}
+@media(max-width:600px){.museum-document-preview{overflow:visible;justify-content:center;padding:10px}.museum-document-preview>span{display:none}.cultural-certificate{width:100%;max-width:100%;min-width:0;aspect-ratio:1.48/1;flex:none;padding:4px}.certificate-border{height:100%;min-height:0;padding:8px;outline-offset:-4px}.certificate-head{gap:6px}.certificate-museum{gap:5px;min-width:0}.museum-document-preview .certificate-museum img{width:25px;height:32px;flex:none}.certificate-museum b{font-size:8px;line-height:1.15}.certificate-museum small{font-size:3.5px;letter-spacing:.08em}.certificate-serial{max-width:72px;flex:none}.certificate-serial small{font-size:3.5px}.certificate-serial b{font-size:5.5px;overflow-wrap:anywhere}.certificate-rule{margin:4px 0}.certificate-main{grid-template-columns:minmax(0,1fr) 82px;gap:7px}.certificate-product small,.certificate-significance small,.certificate-specs small{font-size:4px;line-height:1.15}.certificate-product h3{font-size:10px;line-height:1.05;margin:2px 0 1px}.certificate-product p{font-size:5px;margin-bottom:3px}.certificate-significance{padding-top:3px}.certificate-significance p{font-size:4.8px;line-height:1.25;margin:2px 0 3px}.certificate-specs>div{padding:3px 3px 2px 0}.certificate-specs>div:nth-child(even){padding-left:3px}.certificate-specs b{font-size:4.5px;line-height:1.2;margin-top:2px}.certificate-side{gap:4px}.certificate-product-image{height:64px}.museum-document-preview .certificate-product-image img{object-fit:contain;background:#f0ebe2}.certificate-qr svg{width:22px;height:22px}.certificate-qr small{font-size:3.5px}.certificate-foot{min-height:30px}.certificate-foot>div:first-child p{font-size:3.8px;margin:1px 0}.museum-document-preview .certificate-approval img{width:31px;height:31px}.certificate-approval{gap:3px}.certificate-approval small{font-size:3.5px}.certificate-approval b{font-size:3.8px;margin-top:4px}}
 
-
-/* Chứng thư dạng dọc trên mobile: không kéo ngang, chữ dễ đọc */
-@media(max-width:600px){
-  .museum-document-preview{overflow:visible;justify-content:center;padding:12px}
-  .cultural-certificate{width:100%;max-width:100%;min-width:0;aspect-ratio:auto;flex:0 1 auto;padding:5px}
-  .certificate-border{min-height:720px;padding:16px 14px;outline-offset:-5px}
-  .certificate-head{gap:10px;align-items:flex-start}
-  .certificate-museum{gap:8px;min-width:0}
-  .museum-document-preview .certificate-museum img{width:38px;height:52px;flex:none}
-  .certificate-museum b{font-size:12px;line-height:1.2}
-  .certificate-museum small{font-size:6px;letter-spacing:.08em}
-  .certificate-serial{max-width:92px;flex:none}
-  .certificate-serial small{font-size:6px;line-height:1.25}
-  .certificate-serial b{font-size:8px;overflow-wrap:anywhere}
-  .certificate-rule{margin:10px 0}
-  .certificate-main{grid-template-columns:1fr;gap:12px;flex:initial}
-  .certificate-product small,.certificate-significance small,.certificate-specs small{font-size:8px;line-height:1.3}
-  .certificate-product h3{font-size:21px;line-height:1.15;margin:7px 0 3px}
-  .certificate-product p{font-size:10px;line-height:1.4;margin-bottom:12px}
-  .certificate-significance{padding-top:10px}
-  .certificate-significance p{font-size:11px;line-height:1.55;margin:7px 0 12px}
-  .certificate-specs{grid-template-columns:1fr 1fr}
-  .certificate-specs>div{padding:9px 8px 8px 0}
-  .certificate-specs>div:nth-child(even){padding-left:9px}
-  .certificate-specs b{font-size:10px;line-height:1.45;margin-top:5px}
-  .certificate-side{display:grid;grid-template-columns:1fr 74px;gap:12px;align-items:center}
-  .certificate-product-image{height:150px}
-  .museum-document-preview .certificate-product-image img{object-fit:contain;background:#f0ebe2}
-  .certificate-qr svg{width:48px;height:48px}
-  .certificate-qr small{font-size:7px;line-height:1.35}
-  .certificate-foot{min-height:72px;gap:8px}
-  .certificate-foot>div:first-child p{font-size:8px;line-height:1.4}
-  .museum-document-preview .certificate-approval img{width:66px;height:66px}
-  .certificate-approval{gap:5px}
-  .certificate-approval small{font-size:6px;line-height:1.25}
-  .certificate-approval b{font-size:7px;margin-top:7px}
-}

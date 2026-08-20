@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Award, Check, ChevronDown, Diamond, Fingerprint, Landmark, MapPin, PackageCheck, QrCode, ScrollText, ShieldCheck, Sparkles } from "lucide-react";
 
-export const metadata: Metadata = { title: "Dấu ấn Hoàng triều · STT-01", description: "Hồ sơ sản phẩm văn hóa lấy cảm hứng từ mũ thượng triều thời Nguyễn." };
+export const metadata: Metadata = { title: "Dấu ấn Hoàng triều · STT-01", description: "Hồ sơ số của sản phẩm văn hóa Dấu ấn Hoàng triều đã phát hành trên thị trường." };
 const BASE = "/trace";
 const details = [
   ["01", "Nền mũ", "Sắc đen huyền, viền kim loại ánh vàng."],
@@ -39,7 +39,7 @@ export default function HeritageProductPage() {
     </div></section>
 
     <section className="quick-facts"><div className="page-shell facts-grid">
-      <div><Diamond/><span><small>Kích thước dự kiến</small><b>70 × 60 × 8 mm</b></span></div>
+      <div><Diamond/><span><small>Kích thước sản phẩm</small><b>70 × 60 × 8 mm</b></span></div>
       <div><PackageCheck/><span><small>Công năng</small><b>Vật phẩm nam châm</b></span></div>
       <div><Fingerprint/><span><small>Mã truy xuất</small><b>STT-01-HERITAGE</b></span></div>
     </div></section>
@@ -47,7 +47,7 @@ export default function HeritageProductPage() {
     <section id="story" className="story-section page-shell">
       <div className="section-heading"><p className="eyebrow dark">Câu chuyện thiết kế</p><h2>Từ bảo vật cung đình<br/>đến ký ức mang về</h2><p>Hình tượng chiếc mũ thượng triều được chắt lọc thành một vật phẩm nhỏ gọn—giữ tinh thần trang nghiêm, giàu biểu tượng nhưng gần gũi với đời sống hôm nay.</p></div>
       <div className="story-layout">
-        <div className="detail-image"><Image src={`${BASE}/heritage/stt-01-product.png`} alt="Chi tiết họa tiết rồng và mây" width={1300} height={1217} sizes="(max-width: 900px) 100vw, 48vw"/><span>Chi tiết tạo hình · phiên bản minh họa</span></div>
+        <div className="detail-image"><Image src={`${BASE}/heritage/stt-01-product.png`} alt="Chi tiết họa tiết rồng và mây" width={1300} height={1217} sizes="(max-width: 900px) 100vw, 48vw"/><span>Chi tiết tạo hình sản phẩm</span></div>
         <div className="details-panel"><p className="panel-kicker">Ngôn ngữ tạo hình</p>
           {details.map(([number,title,copy])=><article key={number}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div></article>)}
           <blockquote>“Giữ hồn cốt di sản, kể bằng một hình thức mới.”</blockquote>
@@ -141,10 +141,9 @@ export default function HeritageProductPage() {
         </div>
       </div>
       <div className="document-card">
-        <div className="document-preview"><Image src={`${BASE}/heritage/copyright-certificate.png`} alt="Mẫu Giấy chứng nhận đăng ký quyền tác giả" width={768} height={1024}/></div>
-        <div className="document-copy"><div className="certificate-emblem"><Award size={32}/></div><p className="eyebrow dark">Tài liệu pháp lý</p><h2>Giấy chứng nhận đăng ký quyền tác giả</h2><p>Văn bằng do Cục Bản quyền tác giả – Bộ Văn hóa, Thể thao và Du lịch cấp, ghi nhận hồ sơ đăng ký quyền tác giả cho thiết kế sản phẩm.</p><dl><div><dt>Tên tác phẩm</dt><dd>Dấu ấn Hoàng triều – STT-01</dd></div><div><dt>Loại hình</dt><dd>Tác phẩm mỹ thuật ứng dụng</dd></div><div><dt>Cơ quan cấp</dt><dd>Cục Bản quyền tác giả</dd></div><div><dt>Số · ngày cấp</dt><dd>Chưa có dữ liệu trên bản ảnh được cung cấp</dd></div><div><dt>Tác giả · chủ sở hữu</dt><dd>Chưa có dữ liệu trên bản ảnh được cung cấp</dd></div><div><dt>Trạng thái hồ sơ</dt><dd>Đã có chứng nhận</dd></div></dl></div>
+        <div className="document-preview"><Image src={`${BASE}/heritage/copyright-certificate.png`} alt="Giấy chứng nhận đăng ký quyền tác giả" width={768} height={1024}/></div>
+        <div className="document-copy"><div className="certificate-emblem"><Award size={32}/></div><p className="eyebrow dark">Tài liệu pháp lý</p><h2>Giấy chứng nhận đăng ký quyền tác giả</h2><p>Văn bằng do Cục Bản quyền tác giả – Bộ Văn hóa, Thể thao và Du lịch cấp, ghi nhận quyền tác giả đối với thiết kế sản phẩm đã phát hành.</p><dl><div><dt>Tên tác phẩm</dt><dd>Dấu ấn Hoàng triều – STT-01</dd></div><div><dt>Loại hình</dt><dd>Tác phẩm mỹ thuật ứng dụng</dd></div><div><dt>Cơ quan cấp</dt><dd>Cục Bản quyền tác giả</dd></div><div><dt>Trạng thái hồ sơ</dt><dd>Đã được cấp chứng nhận</dd></div></dl></div>
       </div>
-      <p className="legal-note"><ShieldCheck/> Số văn bằng, ngày cấp và chủ sở hữu cần được đối chiếu và cập nhật đúng theo bản chứng nhận chính thức trước khi công bố rộng rãi.</p>
     </div></section>
 
     <footer className="footer"><div className="page-shell footer-inner"><div className="brand inverse"><span className="brand-seal"><Landmark size={18}/></span><span><b>Dấu Ấn</b><small>Di sản Việt</small></span></div><div className="footer-operator"><Image src={`${BASE}/heritage/vtc-logo.png`} alt="VTC" width={4000} height={2160}/><span><small>Nền tảng được vận hành bởi</small><b>VTC</b></span></div><p>Hồ sơ sản phẩm STT-01<br/>Cập nhật 20.08.2026</p></div></footer>
