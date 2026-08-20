@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Award, Check, ChevronDown, Diamond, Fingerprint, Landmark, MapPin, PackageCheck, ScrollText, ShieldCheck, Sparkles } from "lucide-react";
+import { Award, Check, ChevronDown, Diamond, Fingerprint, Landmark, MapPin, PackageCheck, QrCode, ScrollText, ShieldCheck, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = { title: "Dấu ấn Hoàng triều · STT-01", description: "Hồ sơ sản phẩm văn hóa lấy cảm hứng từ mũ thượng triều thời Nguyễn." };
 const BASE = "/trace";
@@ -79,7 +79,7 @@ export default function HeritageProductPage() {
       <div className="assurance-heading"><p className="eyebrow dark">Certificate · Hồ sơ xác nhận</p><h2>Ba lớp bảo chứng<br/>cho một giá trị văn hóa</h2><p>Thông tin về giá trị văn hóa, quyền tác giả và đơn vị vận hành được thể hiện minh bạch trên cùng hồ sơ sản phẩm.</p></div>
       <div className="assurance-grid">
         <article className="assurance-card museum-card">
-          <div className="assurance-logo museum-logo"><Image src={`${BASE}/heritage/museum-red-seal.png`} alt="Dấu ấn đỏ Bảo tàng Lịch sử Quốc gia" width={480} height={480}/></div>
+          <div className="assurance-logo museum-logo"><Image src={`${BASE}/heritage/museum-logo.png`} alt="Biểu trưng Bảo tàng Lịch sử Quốc gia" width={338} height={338}/></div>
           <div className="assurance-index">01</div><p className="assurance-label">Bảo chứng giá trị văn hóa</p><h3>Bảo tàng Lịch sử Quốc gia</h3>
           <p className="assurance-copy">Bảo chứng nội dung khai thác giá trị văn hóa từ hình tượng mũ thượng triều thời Nguyễn, hệ họa tiết rồng, mây, mặt trời và nghệ thuật trang sức cung đình Việt Nam.</p>
           <div className="assurance-state"><ShieldCheck/><span><small>Trạng thái</small><b>Đã bảo chứng</b></span></div>
@@ -99,7 +99,7 @@ export default function HeritageProductPage() {
       </div>
       <div className="museum-document-card">
         <div className="museum-document-copy">
-          <div className="certificate-emblem museum-seal-emblem"><Image src={`${BASE}/heritage/museum-red-seal.png`} alt="Dấu ấn Bảo tàng Lịch sử Quốc gia" width={480} height={480}/></div>
+          <div className="certificate-emblem"><Landmark size={32}/></div>
           <p className="eyebrow gold">Chứng thư xác thực</p>
           <h2>Chứng nhận<br/>giá trị văn hóa</h2>
           <p>Chứng thư ghi nhận sản phẩm khai thác và chuyển hóa giá trị văn hóa từ di sản Việt Nam, được Bảo tàng Lịch sử Quốc gia bảo chứng về nội dung văn hóa.</p>
@@ -108,7 +108,36 @@ export default function HeritageProductPage() {
         </div>
         <div className="museum-document-preview">
           <span>Certificate of Cultural Value</span>
-          <Image src="https://i.ibb.co/1YPMtgpT/th-ch-ng-nh-n.png" alt="Chứng thư xác thực giá trị văn hóa của Bảo tàng Lịch sử Quốc gia" width={1200} height={850}/>
+          <div className="cultural-certificate" role="img" aria-label="Chứng thư bảo chứng giá trị văn hóa cho sản phẩm Dấu ấn Hoàng triều">
+            <div className="certificate-border">
+              <div className="certificate-head">
+                <div className="certificate-museum"><Image src={`${BASE}/heritage/museum-logo.png`} alt="" width={338} height={338}/><div><b>BẢO TÀNG LỊCH SỬ QUỐC GIA</b><small>NATIONAL MUSEUM OF HISTORY</small></div></div>
+                <div className="certificate-serial"><small>MÃ HỒ SƠ / RECORD NO.</small><b>STT-01-HERITAGE</b></div>
+              </div>
+              <div className="certificate-rule"/>
+              <div className="certificate-main">
+                <div className="certificate-info">
+                  <div className="certificate-product"><small>TÊN SẢN PHẨM / PRODUCT NAME</small><h3>DẤU ẤN HOÀNG TRIỀU</h3><p>Miếng dán tủ lạnh nghệ thuật · STT-01</p></div>
+                  <div className="certificate-significance"><small>THÔNG ĐIỆP & GIÁ TRỊ VĂN HÓA / CULTURAL SIGNIFICANCE</small><p>Sản phẩm lấy cảm hứng từ mũ thượng triều thời Nguyễn, chắt lọc hình tượng rồng, mây, mặt trời và chuỗi hạt cung đình. Thiết kế chuyển hóa tinh thần mỹ thuật truyền thống thành vật phẩm lưu niệm đương đại, góp phần lan tỏa giá trị di sản văn hóa Việt Nam.</p></div>
+                  <div className="certificate-specs">
+                    <div><small>CHẤT LIỆU / MATERIAL</small><b>Kim loại, kính, chi tiết giả ngọc trai, nam châm</b></div>
+                    <div><small>KỸ THUẬT / TECHNIQUE</small><b>Tạo hình, phủ màu, mạ viền, đính chi tiết và lắp ráp</b></div>
+                    <div><small>KÍCH THƯỚC / DIMENSIONS</small><b>70 × 60 × 8 mm</b></div>
+                    <div><small>NGUỒN CẢM HỨNG / HERITAGE REFERENCE</small><b>Mũ thượng triều triều Nguyễn, thế kỷ XIX–XX</b></div>
+                  </div>
+                </div>
+                <div className="certificate-side">
+                  <div className="certificate-product-image"><Image src={`${BASE}/heritage/stt-01-product.png`} alt="Sản phẩm STT-01" width={1300} height={1217}/></div>
+                  <div className="certificate-qr"><QrCode/><small>HỒ SƠ SỐ<br/>DIGITAL RECORD</small></div>
+                </div>
+              </div>
+              <div className="certificate-rule"/>
+              <div className="certificate-foot">
+                <div><p>Ngày cấp / Issue date: 20/08/2026</p><p>Hồ sơ văn hóa sản phẩm STT-01</p></div>
+                <div className="certificate-approval"><Image src={`${BASE}/heritage/museum-red-seal.png`} alt="Dấu ấn xác nhận" width={480} height={480}/><span><small>BẢO CHỨNG GIÁ TRỊ VĂN HÓA</small><b>ĐẠI DIỆN XÁC NHẬN</b></span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="document-card">
