@@ -67,7 +67,7 @@ export default function HeritageProductPage() {
 
     <section className="concept-section"><div className="page-shell">
       <div className="concept-heading"><div><p className="eyebrow dark">Tư liệu sản phẩm</p><h2>Từ ý tưởng đến vật phẩm</h2></div><p>Bảng phát triển ý tưởng STT-01<br/><span>Vuốt ngang để xem trên điện thoại</span></p></div>
-      <div className="concept-scroll"><Image src={`${BASE}/heritage/stt-01-concept-board.png`} alt="Bảng ý tưởng thiết kế STT-01" width={960} height={540} sizes="(max-width: 768px) 860px, 100vw"/></div>
+      <div className="concept-scroll"><Image src={`${BASE}/heritage/stt-01-concept-board.png`} alt="Bảng ý tưởng thiết kế STT-01" width={3000} height={1688} sizes="(max-width: 768px) 860px, 100vw"/></div>
     </div></section>
 
     <section id="trace" className="trace-section page-shell">
