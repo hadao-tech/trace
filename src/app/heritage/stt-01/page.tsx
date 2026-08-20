@@ -34,7 +34,7 @@ export default function HeritageProductPage() {
       <div className="hero-visual">
         <div className="edition-stamp"><span>STT</span><b>01</b></div>
         <div className="hero-image-frame"><Image src={`${BASE}/heritage/stt-01-product.png`} alt="Miếng dán tủ lạnh Dấu ấn Hoàng triều" width={1300} height={1217} priority sizes="(max-width: 900px) 100vw, 56vw"/></div>
-        <div className="verified-chip"><span><Check size={15}/></span><p><small>Hồ sơ đã ghi nhận</small><b>Thông tin truy xuất</b></p></div>
+        <div className="verified-chip"><span><Check size={15}/></span><p><small>Hồ sơ đã ghi nhận</small><b>Bảo chứng giá trị văn hóa</b></p></div>
       </div>
     </div></section>
 
@@ -75,12 +75,36 @@ export default function HeritageProductPage() {
       <div className="timeline">{traceSteps.map(([date,title,place,copy],index)=><article key={title}><div className="timeline-mark"><span>{String(index+1).padStart(2,"0")}</span></div><div className="timeline-copy"><time>{date}</time><h3>{title}</h3><p>{copy}</p><small><MapPin size={13}/>{place}</small></div></article>)}</div>
     </section>
 
-    <section id="certificate" className="certificate-section"><div className="page-shell certificate-card">
-      <div className="certificate-title"><div className="certificate-emblem"><Award size={34}/></div><p className="eyebrow gold">Hồ sơ văn hóa</p><h2>Minh bạch<br/>giá trị di sản</h2><p>Thông tin xác nhận chỉ được công bố khi có văn bản và mã đối chiếu chính thức từ đơn vị có thẩm quyền.</p></div>
-      <div className="certificate-body"><div className="museum-line"><Landmark/><div><small>Đơn vị văn hóa được nêu trong hồ sơ thiết kế</small><h3>Bảo tàng Lịch sử Quốc gia</h3></div></div><div className="certificate-fields"><div><small>Số chứng nhận</small><b>Chưa cung cấp</b></div><div><small>Trạng thái đối chiếu</small><b>Chờ hồ sơ chính thức</b></div></div><div className="disclaimer"><ScrollText/><p>Trang giới thiệu không tự tuyên bố sản phẩm đã được bảo tàng chứng nhận khi chưa có văn bản xác minh chính thức.</p></div></div>
+    <section id="certificate" className="certificate-section"><div className="page-shell">
+      <div className="assurance-heading"><p className="eyebrow dark">Certificate · Hồ sơ xác nhận</p><h2>Ba lớp bảo chứng<br/>cho một giá trị văn hóa</h2><p>Thông tin về giá trị văn hóa, quyền tác giả và đơn vị vận hành được thể hiện minh bạch trên cùng hồ sơ sản phẩm.</p></div>
+      <div className="assurance-grid">
+        <article className="assurance-card museum-card">
+          <div className="assurance-logo museum-logo"><Image src={`${BASE}/heritage/museum-logo.png`} alt="Biểu trưng Bảo tàng Lịch sử Quốc gia" width={338} height={338}/></div>
+          <div className="assurance-index">01</div><p className="assurance-label">Bảo chứng giá trị văn hóa</p><h3>Bảo tàng Lịch sử Quốc gia</h3>
+          <p className="assurance-copy">Giá trị văn hóa và nội dung di sản của sản phẩm được Bảo tàng Lịch sử Quốc gia bảo chứng.</p>
+          <div className="assurance-state"><ShieldCheck/><span><small>Trạng thái</small><b>Đã bảo chứng</b></span></div>
+        </article>
+        <article className="assurance-card copyright-card">
+          <div className="assurance-logo copyright-logo"><Image src={`${BASE}/heritage/copyright-office-logo.png`} alt="Biểu trưng Cục Bản quyền tác giả" width={4000} height={4000}/></div>
+          <div className="assurance-index">02</div><p className="assurance-label">Chứng nhận quyền tác giả</p><h3>Cục Bản quyền tác giả</h3>
+          <p className="assurance-copy">Thiết kế sản phẩm có Giấy chứng nhận đăng ký quyền tác giả do Cục Bản quyền tác giả cấp.</p>
+          <div className="assurance-state"><ScrollText/><span><small>Số giấy chứng nhận</small><b>Cập nhật theo hồ sơ gốc</b></span></div>
+        </article>
+        <article className="assurance-card operator-card">
+          <div className="assurance-logo vtc-logo"><Image src={`${BASE}/heritage/vtc-logo.png`} alt="Biểu trưng VTC" width={4000} height={2160}/></div>
+          <div className="assurance-index">03</div><p className="assurance-label">Đơn vị vận hành nền tảng</p><h3>VTC</h3>
+          <p className="assurance-copy">VTC là đơn vị vận hành nền tảng lưu trữ, công bố và hỗ trợ tra cứu hồ sơ số của sản phẩm.</p>
+          <div className="assurance-state"><Fingerprint/><span><small>Vai trò</small><b>Vận hành nền tảng</b></span></div>
+        </article>
+      </div>
+      <div className="document-card">
+        <div className="document-preview"><Image src={`${BASE}/heritage/copyright-certificate.png`} alt="Mẫu Giấy chứng nhận đăng ký quyền tác giả" width={768} height={1024}/></div>
+        <div className="document-copy"><div className="certificate-emblem"><Award size={32}/></div><p className="eyebrow dark">Tài liệu pháp lý</p><h2>Giấy chứng nhận đăng ký quyền tác giả</h2><p>Văn bằng do Cục Bản quyền tác giả – Bộ Văn hóa, Thể thao và Du lịch cấp, xác lập hồ sơ đăng ký quyền tác giả cho thiết kế.</p><dl><div><dt>Cơ quan cấp</dt><dd>Cục Bản quyền tác giả</dd></div><div><dt>Số văn bằng</dt><dd>Cập nhật theo bản chứng nhận chính thức</dd></div><div><dt>Trạng thái</dt><dd>Đã có chứng nhận</dd></div></dl></div>
+      </div>
+      <p className="legal-note"><ShieldCheck/> Số văn bằng, ngày cấp và chủ sở hữu cần được đối chiếu và cập nhật đúng theo bản chứng nhận chính thức trước khi công bố rộng rãi.</p>
     </div></section>
 
-    <footer className="footer"><div className="page-shell footer-inner"><div className="brand inverse"><span className="brand-seal"><Landmark size={18}/></span><span><b>Dấu Ấn</b><small>Di sản Việt</small></span></div><p>Dữ liệu mẫu phục vụ trình diễn<br/>Cập nhật 19.08.2026</p></div></footer>
+    <footer className="footer"><div className="page-shell footer-inner"><div className="brand inverse"><span className="brand-seal"><Landmark size={18}/></span><span><b>Dấu Ấn</b><small>Di sản Việt</small></span></div><div className="footer-operator"><Image src={`${BASE}/heritage/vtc-logo.png`} alt="VTC" width={4000} height={2160}/><span><small>Nền tảng được vận hành bởi</small><b>VTC</b></span></div><p>Hồ sơ sản phẩm STT-01<br/>Cập nhật 20.08.2026</p></div></footer>
     <nav className="mobile-nav"><a href="#trace"><Fingerprint/>Truy xuất</a><a href="#certificate"><Award/>Hồ sơ</a></nav>
   </main>;
 }
