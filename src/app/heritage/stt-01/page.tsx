@@ -79,7 +79,7 @@ export default function HeritageProductPage() {
       <div className="assurance-heading"><p className="eyebrow dark">Certificate · Hồ sơ xác nhận</p><h2>Ba lớp bảo chứng<br/>cho một giá trị văn hóa</h2><p>Thông tin về giá trị văn hóa, quyền tác giả và đơn vị vận hành được thể hiện minh bạch trên cùng hồ sơ sản phẩm.</p></div>
       <div className="assurance-grid">
         <article className="assurance-card museum-card">
-          <div className="assurance-logo museum-logo"><Image src={`${BASE}/heritage/museum-logo.png`} alt="Biểu trưng Bảo tàng Lịch sử Quốc gia" width={338} height={338}/></div>
+          <div className="assurance-logo museum-logo"><Image src={`${BASE}/heritage/museum-red-seal.png`} alt="Dấu ấn đỏ Bảo tàng Lịch sử Quốc gia" width={480} height={480}/></div>
           <div className="assurance-index">01</div><p className="assurance-label">Bảo chứng giá trị văn hóa</p><h3>Bảo tàng Lịch sử Quốc gia</h3>
           <p className="assurance-copy">Bảo chứng nội dung khai thác giá trị văn hóa từ hình tượng mũ thượng triều thời Nguyễn, hệ họa tiết rồng, mây, mặt trời và nghệ thuật trang sức cung đình Việt Nam.</p>
           <div className="assurance-state"><ShieldCheck/><span><small>Trạng thái</small><b>Đã bảo chứng</b></span></div>
@@ -99,7 +99,7 @@ export default function HeritageProductPage() {
       </div>
       <div className="museum-document-card">
         <div className="museum-document-copy">
-          <div className="certificate-emblem"><Landmark size={32}/></div>
+          <div className="certificate-emblem museum-seal-emblem"><Image src={`${BASE}/heritage/museum-red-seal.png`} alt="Dấu ấn Bảo tàng Lịch sử Quốc gia" width={480} height={480}/></div>
           <p className="eyebrow gold">Chứng thư xác thực</p>
           <h2>Chứng nhận<br/>giá trị văn hóa</h2>
           <p>Chứng thư ghi nhận sản phẩm khai thác và chuyển hóa giá trị văn hóa từ di sản Việt Nam, được Bảo tàng Lịch sử Quốc gia bảo chứng về nội dung văn hóa.</p>
